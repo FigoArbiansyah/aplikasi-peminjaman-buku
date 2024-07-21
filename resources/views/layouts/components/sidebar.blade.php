@@ -2,7 +2,7 @@
     $menus = [
         (object) [
             "title" => "Dashboard",
-            "path" => "/",
+            "path" => "admin/dashboard",
             "icon" => "bx-home-circle",
         ],
     ];
