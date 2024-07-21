@@ -8,10 +8,10 @@
                         <div class="card-body">
                             <h5 class="card-title text-primary">Selamat datang {{ auth()->user()->name ?? '--' }}! 🎉</h5>
                             <p class="mb-4">
-                                Cari buku yang kamu mau dan ajukan peminjaman.
+                                Kelola data pondok pesantren anda.
                             </p>
 
-                            <a href="javascript:;" class="btn btn-sm btn-outline-primary">Lihat Buku</a>
+                            <a href="javascript:;" class="btn btn-sm btn-outline-primary">Lihat Santri</a>
                         </div>
                     </div>
                     <div class="col-sm-5 text-center text-sm-left">
