@@ -14,16 +14,19 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         User::create([
-            "name" => "Admin Perpustakaan",
+            "name" => "Admin Ponpes",
             "role_id" => 1,
             "email" => "admin_super@gmail.com",
             "password" => "4dm!n5up3R",
+            "institution_id" => 1,
         ]);
+
         User::create([
-            "name" => "Member 1",
+            "name" => "Asep Saepudin",
             "role_id" => 2,
-            "email" => "member_1@gmail.com",
+            "email" => "asep@gmail.com",
             "password" => "M3mb3r_1",
+            "institution_id" => 1,
         ]);
     }
 }

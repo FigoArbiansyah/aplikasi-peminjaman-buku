@@ -20,7 +20,17 @@ class MRoleSeeder extends Seeder
 
         MRole::create([
             "id" => 2,
-            "name" => "Anggota"
+            "name" => "Santri"
+        ]);
+
+        MRole::create([
+            "id" => 3,
+            "name" => "Guru"
+        ]);
+
+        MRole::create([
+            "id" => 4,
+            "name" => "Wali Santri"
         ]);
     }
 }
