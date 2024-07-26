@@ -1,4 +1,12 @@
 @php
+    $authID = auth()->user()->id;
+    // $user = DB::table('users')
+    //         ->select('institutions.name as institution_name')
+    //         ->join('institutions', 'users.institution_id', '=', 'institutions.id')
+    //         ->first();
+
+    $user = App\Models\User::with('institution')->find($authID);
+
     $menus = [
         (object) [
             "title" => "Dashboard",
@@ -55,7 +63,7 @@
                     </g>
                 </svg>
             </span>
-            <span class="app-brand-text demo menu-text fw-bold ms-2">SIMPONPES</span>
+            <span class="app-brand-text demo menu-text fw-bold ms-2">{{ isset($user->institution->name) ? $user->institution->name : 'SIMPONPES' }}</span>
         </a>
 
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
